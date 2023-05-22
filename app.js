@@ -21,9 +21,9 @@ inputs.forEach(input => {
   input.addEventListener("input", e => {
     value = input.value
     if (
-      (value > 31 || value < 0 && placeholder === "DD") ||
-      (value > 12 || value < 0 && placeholder === "MM") ||
-      (value > currentYear || value < 0 && placeholder === "YYYY")
+      (value > 31 && placeholder === "DD") ||
+      (value > 12 && placeholder === "MM") ||
+      (value > currentYear && placeholder === "YYYY")
     ) {
       input.classList.add("error-input")
       parent.querySelector(".valid-error").classList.add("show-valid-error")
