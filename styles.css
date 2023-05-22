@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  /* line-height: 0; */
+}
+
+body {
+  background: hsl(0, 0%, 94%);
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input::placeholder {
+  color: hsl(0, 1%, 44%);
+}
+
+hr {
+  flex: 1;
+  border: 1px solid hsl(0, 0%, 86%);
+}
+
+span {
+  color: hsl(259, 100%, 65%);
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(3,0fr);
+  padding: 55px;
+  background: hsl(0, 0%, 100%);
+  max-width: 730px;
+  width: 79%;
+  border-radius: 25px 25px 200px 25px;
+}
+
+.dob {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 75%;
+}
+
+.label {
+  color: hsl(0, 1%, 44%);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  padding-bottom: 8px;
+}
+
+.dob-input {
+  font-size: 32px;
+  font-weight: 700;
+  padding: 12px 22px;
+  border-radius: 8px;
+  border: 1px solid hsl(0, 0%, 86%);
+  max-width: 115px;
+}
+
+.dob-input:focus {
+  border: 1px solid hsl(259, 100%, 65%);
+  caret-color: hsl(259, 100%, 65%);
+}
+
+.error {
+  color: hsl(0, 100%, 67%);
+  font-size: 0.83rem;
+  font-style: italic;
+  margin-top: 10px;
+  display: none;
+}
+
+.error-lable {
+  color: hsl(0, 100%, 67%);
+}
+
+.error-input {
+  border-color: hsl(0, 100%, 67%);
+}
+
+.error-input:focus {
+  border: 1px solid hsl(0, 100%, 67%);
+  caret-color: hsl(0, 100%, 67%);
+}
+
+.show-field-error,
+.show-valid-error,
+.show-date-error {
+  display: block;
+}
+
+.seperation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.line-2 {
+  display: none;
+}
+
+.btn {
+  width: 100px;
+  cursor: pointer;
+}
+
+.btn-black {
+  display: none;
+  cursor: pointer;
+}
+
+.data-container {
+  margin-top: -10px;
+}
+
+.data {
+  display: block;
+  font-size: 6.5rem;
+  color: hsl(0, 0%, 8%);
+  font-weight: 800;
+  font-style: italic;
+  line-height: 110%;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    padding: 50px 24px;
+    gap: 32px;
+    width: auto;
+    border-radius: 20px 20px 100px 20px;
+  }
+
+  .data {
+    font-size: 3.4rem;
+  }
+
+  .line-2 {
+    display: block;
+  }
+
+  .dob {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .label {
+    font-size: 12px;
+  }
+
+  .dob-input {
+    font-size: 20px;
+    padding: 10px 14px;
+    width: 60px;
+  }
+
+  .btn {
+    width: 65px;
+    height: 65px;
+  }
+
+  .data-container {
+    margin-top: 0px;
+  }
+  
+  .error{
+    max-width: 90px;
+  }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+
+  <title>Age calculator app</title>
+
+<body>
+
+  <div class="container">
+    <form class="dob">
+      <div>
+        <p class="label">DAY</p>
+        <input class="dob-input" type="text" placeholder="DD">
+        <p class="error field-error">This field is required</p>
+        <p class="error valid-error">Must be a valid day</p>
+        <p class="error date-error">Must be a valid date</p>
+        
+      </div>
+      <div>
+        <p class="label">MONTH</p>
+        <input class="dob-input" type="text" placeholder="MM">
+        <p class="error field-error">This field is required</p>
+        <p class="error valid-error">Must be a valid month</p>
+
+      </div>
+      <div>
+        <p class="label">YEAR</p>
+        <input class="dob-input" type="text" placeholder="YYYY">
+        <p class="error field-error">This field is required</p>
+        <p class="error valid-error">Must be in the past</p>
+
+      </div>
+
+    </form>
+    <div class="seperation">
+      <hr>
+      
+      <svg class="btn" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+        viewBox="0,0,256,256">
+        <g transform="translate(-10.24,-10.24) scale(1.08,1.08)">
+          <g fill="#854dff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+            <g transform="scale(5.12,5.12)">
+              <path
+                d="M25.05859,2.17188c-12.68359,0 -23,10.31641 -23,23c0,12.68359 10.31641,23 23,23c12.67969,0 23,-10.31641 23,-23c0,-12.68359 -10.32031,-23 -23,-23zM33.70703,29.70703l-8,8c-0.08984,0.09375 -0.20312,0.16406 -0.32422,0.21484c-0.12109,0.05078 -0.25391,0.07813 -0.38281,0.07813c-0.12891,0 -0.26172,-0.02734 -0.38281,-0.07812c-0.12109,-0.05078 -0.23047,-0.12109 -0.32422,-0.21484l-8,-8c-0.39062,-0.39062 -0.39062,-1.02344 0,-1.41406c0.39063,-0.39062 1.02344,-0.39062 1.41406,0l6.29297,6.29297v-21.58594c0,-0.55078 0.44922,-1 1,-1c0.55078,0 1,0.44922 1,1v21.58594l6.29297,-6.29297c0.39063,-0.39062 1.02344,-0.39062 1.41406,0c0.39063,0.39063 0.39063,1.02344 0,1.41406z">
+              </path>
+            </g>
+          </g>
+        </g>
+      </svg>
+
+      <svg class="btn btn-black" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+        viewBox="0,0,256,256">
+        <g transform="translate(-10.24,-10.24) scale(1.08,1.08)">
+          <g fill="hsl(0, 0%, 8%)" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+            font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+            <g transform="scale(5.12,5.12)">
+              <path
+                d="M25.05859,2.17188c-12.68359,0 -23,10.31641 -23,23c0,12.68359 10.31641,23 23,23c12.67969,0 23,-10.31641 23,-23c0,-12.68359 -10.32031,-23 -23,-23zM33.70703,29.70703l-8,8c-0.08984,0.09375 -0.20312,0.16406 -0.32422,0.21484c-0.12109,0.05078 -0.25391,0.07813 -0.38281,0.07813c-0.12891,0 -0.26172,-0.02734 -0.38281,-0.07812c-0.12109,-0.05078 -0.23047,-0.12109 -0.32422,-0.21484l-8,-8c-0.39062,-0.39062 -0.39062,-1.02344 0,-1.41406c0.39063,-0.39062 1.02344,-0.39062 1.41406,0l6.29297,6.29297v-21.58594c0,-0.55078 0.44922,-1 1,-1c0.55078,0 1,0.44922 1,1v21.58594l6.29297,-6.29297c0.39063,-0.39062 1.02344,-0.39062 1.41406,0c0.39063,0.39063 0.39063,1.02344 0,1.41406z">
+              </path>
+            </g>
+          </g>
+        </g>
+      </svg>
+      <hr class="line-2">
+
+    </div>
+
+    <div class="data-container">
+      <h2 class="data"><span id="years">- -</span> years</h2>
+      <h2 class="data"><span id="months">- -</span> months</>
+      <h2 class="data"><span id="days">- -</span> days</>
+    </div>
+  </div>
+
+</body>
+
+</html>
